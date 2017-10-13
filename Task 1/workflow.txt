@@ -1,0 +1,5 @@
+workflow.
+1- Launch guest vagrant via vagrant file.
+2- Vagrant file will install the Docker engine and Docker compose on the guest system.
+3- upon succesfull launch of guest VM, an image will be created from the dockerfile and the containaer will be launched with the help of shell script launch_container.
+4- run the script hostfile-local-modify to modify the hostfile on host system.

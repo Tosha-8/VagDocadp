@@ -1,0 +1,13 @@
+- name: Make sure configuration directory exists
+  file:
+    path: '/etc/nginx/conf.d'
+    state: 'directory'
+    owner: 'root'
+    group: 'root'
+mode: '0755
+
+#copy the conf file for custom host configuration
+- name: copy web.conf
+  file:
+    dest: '/etc/nginx/web.conf'
+	state: 'present'

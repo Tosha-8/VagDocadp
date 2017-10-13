@@ -1,0 +1,4 @@
+workflow.
+1- There is no direct provider for VirtualBox in Terraform.
+2- so we are launching the VM via Vagrantfile.
+3- once machine is launched it will trigger the shell script which trigger playbooks nginx_install.yml nginx.config.yml
